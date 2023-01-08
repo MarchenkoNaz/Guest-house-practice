@@ -25,7 +25,7 @@
 					<li class="nav__item"><a class="nav__link" href=" #">Our history</a></li>
 				</ul>
 
-				<button type="button" class="button ">Book now</button>
+				<button type="button" class="button  " data-modal-open>Book now</button>
 			</nav>
 
 
@@ -436,6 +436,53 @@
 		</div>
 	</footer>
 
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<form class="modal__form">
+				<h2 class="modal__form-title">Book now</h2>
+				<button class="modal__close" data-modal-close> <svg class="modal__close-icon" width="12" height="12">
+						<use href="./icons/icons.svg#icon-cancel"></use>
+					</svg></button>
+				<div class="modal__group">
+					<label for="name" class="modal__form-label">Name
+					</label>
+					<input class=" modal__form-input" type="text" id="name" placeholder="John">
+				</div>
+				<div class="modal__group">
+					<label for="surname" class="modal__form-label">Surname
+					</label>
+					<input class=" modal__form-input" type="text" id="surname" placeholder="Wiick">
+				</div>
+				<div class="modal__group">
+					<label for="date" class="modal__form-label">Date
+					</label>
+					<input class=" modal__form-input" type="datetime-local" min="2023-01-08T12:00" id="date"
+						placeholder="2023-01-08T12:00">
+				</div>
+				<div class="modal__group">
+					<label for="number" class="modal__form-label">How many people will be?
+					</label>
+
+					<input class=" modal__form-input" type="number" id="number" min="0">
+				</div>
+				<div class="modal__checkbox">
+					<div class="checkbox-box">
+						<input class=" modal__form-checkbox visually-hidden " type="checkbox" id="checkbox">
+						<svg class="modal__form-checkbox-icon" width="10" height="10">
+							<use href="./icons/icons.svg#icon-checkmark"></use>
+						</svg>
+
+					</div>
+					<label for="checkbox" class="modal__form-label privacy">I accept privacy.
+
+					</label>
+				</div>
+			</form>
+			<button class="button brand--button brand-button--centered ">Book</button>
+		</div>
+	</div>
+
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>

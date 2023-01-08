@@ -1,11 +1,13 @@
 @import "../utils/mixins";
 %button {
+  cursor: pointer;
   display: inline-block;
   width: 117px;
   height: 42px;
   border-radius: 6px;
   border: none;
   @include transition(box-shadow);
+  @include transition(color);
 }
 
 .button {
@@ -15,6 +17,7 @@
 
   &:hover {
     box-shadow: 0px 1px 10px var(--hover-color);
+    color: var(--decoration-color);
   }
 }
 

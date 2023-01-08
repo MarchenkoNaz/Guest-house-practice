@@ -14,7 +14,7 @@
   .nav__link {
     color: var(--font-color);
     &:hover {
-      color: var(--hover-color);
+      color: var(--decoration-color);
       @include transition(color);
     }
   }
