@@ -1,0 +1,42 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  text-align: start;
+  position: relative;
+  min-width: 600px;
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -15%;
+    left: 0;
+    width: 42px;
+    height: 8px;
+    background-color: var(--decoration-color);
+  }
+}
+
+.title-wrapper--centered {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 600px;
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 8px;
+    background-color: var(--decoration-color);
+  }
+}
+
+.flex {
+  display: flex;
+}

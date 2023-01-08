@@ -1,0 +1,81 @@
+@import "../utils/mixins";
+.reviews__list {
+  display: flex;
+}
+.reviews__item {
+  padding: 31px;
+  width: 584px;
+
+  background-color: #fff;
+  color: var(--review-font);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  &-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 11px;
+  }
+  &-text {
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.rating {
+  margin-bottom: 15px;
+}
+.reviews__item-author {
+  position: relative;
+  padding-left: 10px;
+  line-height: 1.4;
+  &::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 20px;
+    background-color: var(--decoration-color);
+  }
+}
+
+%slider {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  opacity: 0.25;
+  @include transition(opacity);
+}
+
+.slider {
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider__left {
+  @extend %slider;
+  &:hover {
+    opacity: 1;
+  }
+}
+.slider__right {
+  @extend %slider;
+  margin-left: 10px;
+  &:hover {
+    opacity: 1;
+  }
+}
+.slider__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

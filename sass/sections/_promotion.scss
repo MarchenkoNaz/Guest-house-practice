@@ -1,0 +1,19 @@
+.promotion__title {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  text-align: center;
+  color: var(--brand-color);
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 8px;
+    background-color: var(--decoration-color);
+  }
+}

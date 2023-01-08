@@ -1,0 +1,21 @@
+.arrangements__list {
+  display: flex;
+  text-align: center;
+  margin-left: -72px;
+}
+.arrangements__item {
+  margin-left: 72px;
+}
+
+.arrangements__item-icon {
+  margin-bottom: 12px;
+}
+.arrangements__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.arrangements__item-text {
+  line-height: 1.4;
+}

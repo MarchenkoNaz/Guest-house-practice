@@ -1,0 +1,15 @@
+%decoration-image {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.kitchen {
+  @extend %decoration-image;
+  background-image: url("/images/kitchen.jpg");
+}
+
+.furniture {
+  @extend %decoration-image;
+  background-image: url("/images/furniture.jpg");
+}

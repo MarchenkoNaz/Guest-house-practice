@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  width: 800px;
+  column-count: 2;
+  column-width: 360px;
+  column-gap: 40px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 8px;
+    background-color: var(--decoration-color);
+  }
+}
+.about__text {
+  line-height: 1.4;
+  color: var(--secondary-font-color);
+}
+
+.about__text:nth-child(2) {
+  margin-bottom: 41px;
+}

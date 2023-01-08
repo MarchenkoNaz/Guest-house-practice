@@ -1,0 +1,23 @@
+.comfort-container {
+  display: flex;
+}
+.comfort__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+  margin-left: -32px;
+}
+.comfort__item {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-self: center;
+  max-width: 260px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+.comfort__text {
+  line-height: 1.4;
+  margin-left: 14px;
+}

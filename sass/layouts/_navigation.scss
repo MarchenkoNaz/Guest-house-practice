@@ -1,0 +1,21 @@
+.nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  color: var(--font-color);
+}
+.nav__item {
+  padding: 20px 12px;
+
+  .nav__link {
+    color: var(--font-color);
+    &:hover {
+      color: var(--hover-color);
+      @include transition(color);
+    }
+  }
+}
